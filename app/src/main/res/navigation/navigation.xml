@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/halamanAwal">
+
+    <fragment
+        android:id="@+id/about"
+        android:name="com.example.calculatorku.About"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/halamanAwal"
+        android:name="com.example.calculatorku.HalamanAwal"
+        android:label="fragment_halaman_awal"
+        tools:layout="@layout/fragment_halaman_awal" >
+        <action
+            android:id="@+id/fragment_about"
+            app:destination="@id/about" />
+    </fragment>
+</navigation>
